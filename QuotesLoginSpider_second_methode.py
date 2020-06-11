@@ -10,7 +10,7 @@ class QuotesLoginSpider(scrapy.Spider):
         return scrapy.FormRequest.from_response(
             response,
             formdata = {
-                'usename': 'abc',
+                'username': 'abc',
                 'password' : 'abc'
             },
             callback  = self.parse_quotes
